@@ -17,7 +17,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    background: rgba(0, 0, 0, 35);
+    background: rgba(0, 0, 0, 0.75);
     backdrop-filter:blur(15px);
     position: fixed;
     top :0;
@@ -191,18 +191,35 @@ nav{
     gap: 20px;
 }
 .hero{
-    width: 100%;
+     width: calc(100% - 40px);
     height: 40vh;
-    margin-top: 80px;
-    position: relative;
+
+    margin: 90px auto 20px;
+
+    border-radius: 10px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
 }
 .hero-content{
+    position: relative;
     z-index: 2;
+    max-width: 700px;
+    padding-left: 60px;
 }
 .hero-content h1{
     font-size: 50px;
@@ -212,11 +229,11 @@ nav{
 
 }
 .hero-content p{
-    font: size 22px;
+    font-size: 22px;
     color: #ddd;
 }
 .play-btn{
-    margin-top: 25px;
+    margin-top: 60px;
     padding: 14px 35px;
     border: none;
     border-radius: 30px;
@@ -224,12 +241,112 @@ nav{
     color: black;
     font-size: 18px;
     cursor: pointer;
-    transition: 3s;
+    transition:all  0.3s ease;
 }
 .play-btn:hover{
-    transform: scale(1.08);
+    transform:translateY(-5px) scale(1.08);
      
     box-shadow:
      0 0 10px #00E5FF,
      0 0 25px  #00E5FF;
+}
+.hero{
+    background-image: url("images/bg.1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+}
+.prev{
+     position: absolute;
+    left: 20px;          /* Pehle agar 0px ya -10px hai to change karo */
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+
+    z-index: 10;
+}
+.next{
+
+    position: absolute;
+
+    right: 25px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    z-index: 10;
+
+}
+.prev:hover,
+.next:hover
+    {
+  background: #00E5FF;
+  color: black;
+  
+  box-shadow:
+    0 0 15px #00E5FF,
+    0 0 30px  #00E5FF;
+
+}
+.dots{
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    transform: translate(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+    
+}
+.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background:rgba(225, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.dot.active{
+    background: #00E5FF;
+    transform: scale(1.3);
+    box-shadow: 
+    0 0 10px #00E5FF,
+    0 0 20px  #00E5FF;
+}
+.dot:hover{
+    background: white;
+    transform: scale(1.2);
 }
