@@ -597,3 +597,40 @@ nav{
     color: #888;
 
 }
+/* Light Theme */
+
+body.light-mode{
+    background:#F4F7FC;
+    color:#111;
+}
+
+body.light-mode nav{
+    background:#ffffff;
+}
+
+body.light-mode .menu a{
+    color:#111;
+}
+
+body.light-mode .logo h2{
+    color:#111;
+}
+
+body.light-mode .search-box{
+    background:#f2f2f2;
+    color:#111;
+}
+
+body.light-mode .profile i{
+    color:#111;
+}
+
+body.light-mode .game-card{
+    background:#ffffff;
+    color:#111;
+}
+
+body.light-mode footer{
+    background:#ffffff;
+    color:#111;
+}

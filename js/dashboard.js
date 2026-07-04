@@ -1,3 +1,9 @@
+const savedTheme = localStorage.getItem("theme");
+
+if(savedTheme === "light"){
+    document.body.classList.add("light-mode");
+}
+
 const wallpapers = [
     "images/bg.1.jpg",
     "images/bg2.jpg",
