@@ -350,3 +350,250 @@ nav{
     background: white;
     transform: scale(1.2);
 }
+.games{
+
+    width: calc(100% - 40px);
+
+    margin: 40px auto;
+
+}
+
+.section-title{
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+}
+
+.game-container{
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+
+}
+.game-card{
+
+    background: #151A28;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: .3s;
+
+    cursor: pointer;
+
+}
+.game-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+.game-card h3{
+
+    padding:15px;
+
+    font-size:22px;
+
+}
+.game-card button{
+
+    margin:15px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:#00E5FF;
+
+    cursor:pointer;
+
+}
+.game-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 0 20px #00E5FF;
+
+}
+/* ===========================
+        FOOTER
+=========================== */
+
+.footer{
+
+    background: #090C14;
+
+    margin-top: 70px;
+
+    padding: 60px 80px 20px;
+
+    border-top: 2px solid #00E5FF;
+
+}
+
+.footer-container{
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 40px;
+
+}
+
+.footer-box h2{
+
+    color: #00E5FF;
+
+    margin-bottom: 20px;
+
+}
+
+.footer-box h3{
+
+    color: white;
+
+    margin-bottom: 20px;
+
+}
+
+.footer-box p{
+
+    color: #BFC7D5;
+
+    line-height: 1.8;
+
+}
+
+.footer-box a{
+
+    display: block;
+
+    text-decoration: none;
+
+    color: #BFC7D5;
+
+    margin: 12px 0;
+
+    transition: all .3s ease;
+
+}
+
+.footer-box a:hover{
+
+    color: #00E5FF;
+
+    transform: translateX(8px);
+
+}
+
+/* ===========================
+      NEWSLETTER
+=========================== */
+
+.newsletter{
+
+    margin-top: 50px;
+
+    text-align: center;
+
+}
+
+.newsletter h3{
+
+    margin-bottom: 20px;
+
+}
+
+.newsletter-box{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+}
+
+.newsletter-box input{
+
+    width: 320px;
+
+    padding: 14px 18px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 30px;
+
+    background: #151A28;
+
+    color: white;
+
+    transition: .3s;
+
+}
+
+.newsletter-box input:focus{
+
+    box-shadow: 0 0 15px #00E5FF;
+
+}
+
+.newsletter-box button{
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #00E5FF;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.newsletter-box button:hover{
+
+    transform: scale(1.05);
+
+    box-shadow: 0 0 20px #00E5FF;
+
+}
+
+/* ===========================
+      FOOTER BOTTOM
+=========================== */
+
+.footer-bottom{
+
+    margin-top: 50px;
+
+    border-top: 1px solid #2A3248;
+
+    padding-top: 20px;
+
+    text-align: center;
+
+    color: #888;
+
+}
