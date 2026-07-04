@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#0B0F19;
+    color:white;
+}
+
+.settings-container{
+
+    width:60%;
+
+    margin:60px auto;
+
+}
+
+.settings-container h1{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.settings-container p{
+
+    color:#bbb;
+
+    margin-bottom:35px;
+
+}
+.settings-card{
+
+    background:#171C2B;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    transition:.3s;
+
+}
+
+.settings-card:hover{
+
+    box-shadow:0 0 20px rgba(0,229,255,.3);
+
+}
