@@ -27,3 +27,41 @@ themeToggle.addEventListener("change", () => {
     }
 
 });
+const musicToggle = document.getElementById("musicToggle");
+const bgMusic = document.getElementById("bgMusic");
+
+bgMusic.volume = 0.3;
+
+// Saved state
+const musicState = localStorage.getItem("music");
+
+if (musicState === "off") {
+
+    musicToggle.checked = false;
+
+} else {
+
+    musicToggle.checked = true;
+
+    document.addEventListener("click", () => {
+        bgMusic.play();
+    }, { once: true });
+
+}
+
+// Switch
+musicToggle.addEventListener("change", () => {
+
+    if (musicToggle.checked) {
+
+        localStorage.setItem("music", "on");
+        bgMusic.play();
+
+    } else {
+
+        localStorage.setItem("music", "off");
+        bgMusic.pause();
+
+    }
+
+});

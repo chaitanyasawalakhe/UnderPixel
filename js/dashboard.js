@@ -60,3 +60,31 @@ next.addEventListener("click", nextWallpaper);
 
 
 setInterval(nextWallpaper,3000);
+const bgMusic = document.getElementById("bgMusic");
+
+bgMusic.volume = 0.3;
+
+const musicState = localStorage.getItem("music");
+
+if (musicState !== "off") {
+
+    document.addEventListener("click", () => {
+        bgMusic.play();
+    }, { once: true });
+
+}
+// ================= Profile Dropdown =================
+
+const profile = document.querySelector(".profile");
+const profileDropdown = document.querySelector(".profile-dropdown");
+
+// Profile icon click
+profile.addEventListener("click", (e) => {
+    e.stopPropagation();
+    profileDropdown.classList.toggle("active");
+});
+
+// Bahar click karne par close
+document.addEventListener("click", () => {
+    profileDropdown.classList.remove("active");
+});
