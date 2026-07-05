@@ -40,7 +40,7 @@ registerBtn.addEventListener("click", function () {
 
             alert("🎉 Account Created Successfully!");
 
-            window.location.href = "index.html";
+            window.location.href = "login.html";
 
         })
 
